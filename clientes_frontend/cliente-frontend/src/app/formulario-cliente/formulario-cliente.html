@@ -1,0 +1,60 @@
+<h2>Registro Nuevo Cliente</h2>
+
+<form [formGroup]="clienteForm" (ngSubmit)="guardarCliente()">
+
+  <div class="form-group">
+    <label>Nombre: </label>
+    <input type="text" formControlName="nombre" placeholder="Nombre completo">
+
+    <div *ngIf="clienteForm.get('nombre')?.invalid && clienteForm.get('nombre')?.touched" style="color: red;">
+      <small>El nombre es obligatorio (mín. 2 letras).</small>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Apellido: </label>
+    <input type="text" formControlName="apellido" placeholder="Apellido completo">
+
+    <div *ngIf="clienteForm.get('apellido')?.invalid && clienteForm.get('apellido')?.touched" style="color: red;">
+      <small>El apellido es obligatorio (mín. 2 letras).</small>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>CURP: </label>
+    <input type="text" formControlName="curp" placeholder="CURP completo">
+
+    <div *ngIf="clienteForm.get('curp')?.invalid && clienteForm.get('curp')?.touched" style="color: red;">
+      <small>El CURP es obligatorio (Formato XXXX000000XXXXXX00).</small>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Correo Electrónico: </label>
+    <input type="email" formControlName="correo" placeholder="ejemplo@correo.com">
+
+    <div *ngIf="clienteForm.get('correo')?.invalid && clienteForm.get('correo')?.touched" style="color: red;">
+      <small>Ingresa un correo válido (ejemplo@gmail.com).</small>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Telefono: </label>
+    <input type="text" formControlName="telefono" placeholder="55XXXXXXXX">
+
+    <div *ngIf="clienteForm.get('telefono')?.invalid && clienteForm.get('telefono')?.touched" style="color: red;">
+      <small>Deben ser 10 números.</small>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Puesto: </label>
+    <input type="text" formControlName="puesto" placeholder="Ej. Analista de Sistemas">
+
+    <div *ngIf="clienteForm.get('puesto')?.invalid && clienteForm.get('puesto')?.touched" style="color: red;">
+      <small>El puesto es obligatorio (mín. 5 letras)</small>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="clienteForm.invalid">Registrar Cliente</button>
+</form>

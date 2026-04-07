@@ -1,0 +1,17 @@
+<h2>Administrador de Clientes</h2>
+
+<div [formGroup]="clienteForm" class="form-container">
+  <input type="text" formControlName="nombre" placeholder="Nombre">
+  <input type="text" formControlName="apellido" placeholder="Apellido/s">
+  <input type="text" formControlName="curp" placeholder="CURP">
+  <input type="email" formControlName="correo" placeholder="Correo electrónico">
+  <input type="text" formControlName="telefono" placeholder="Telefono">
+  <input type="text" formControlName="puesto" placeholder="Puesto">
+
+  <div class="actions">
+    <button (click)="enviarFormulario()" [disabled]="clienteForm.invalid" class="btn-save">
+      {{ editando ? 'Actualizar Cliente' : 'Registrar Nuevo' }}
+    </button>
+    <button *ngIf="editando" (click)="cancelarEdicion()" class="btn-cancel">Cancelar</button>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+services:
+  frontend-angular:
+    build: .
+    container_name: frontend
+    ports:
+      - "8080:80"
+    networks:
+      - red-compartida
+    restart: always
+
+networks:
+  red-compartida:
+    external: true
