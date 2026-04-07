@@ -1,0 +1,15 @@
+com\example\clientes_backend\security\JwtService.class
+com\example\clientes_backend\repository\UsuarioRepository.class
+com\example\clientes_backend\model\Usuario.class
+com\example\clientes_backend\config\SecurityConfig.class
+com\example\clientes_backend\controller\ClienteController.class
+com\example\clientes_backend\model\Proyecto.class
+com\example\clientes_backend\security\JwtAuthenticationFilter.class
+com\example\clientes_backend\config\ApplicationConfig.class
+com\example\clientes_backend\repository\ClienteRepository.class
+com\example\clientes_backend\ClientesBackendApplication.class
+com\example\clientes_backend\model\Cliente.class
+com\example\clientes_backend\controller\UsuarioController.class
+com\example\clientes_backend\exception\GlobalExceptionHandler.class
+com\example\clientes_backend\service\ClienteService.class
+com\example\clientes_backend\controller\AuthController.class

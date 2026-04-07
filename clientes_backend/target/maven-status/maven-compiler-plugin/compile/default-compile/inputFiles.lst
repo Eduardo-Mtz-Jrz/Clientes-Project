@@ -1,0 +1,15 @@
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\ClientesBackendApplication.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\config\ApplicationConfig.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\config\SecurityConfig.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\controller\AuthController.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\controller\ClienteController.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\controller\UsuarioController.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\exception\GlobalExceptionHandler.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\model\Cliente.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\model\Proyecto.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\model\Usuario.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\repository\ClienteRepository.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\repository\UsuarioRepository.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\security\JwtAuthenticationFilter.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\security\JwtService.java
+C:\Users\EDUARDO MARTINEZ\Desktop\clientes_backend\src\main\java\com\example\clientes_backend\service\ClienteService.java

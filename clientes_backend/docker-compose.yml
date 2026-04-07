@@ -1,0 +1,17 @@
+services:
+  api-backend:
+    build: .
+    container_name: backend
+    ports:
+      - "9001:9001"
+    environment:
+      - DB_HOST=proyecto
+      - DB_USER=root
+      - DB_PASSWORD=19CHied95
+    networks:
+      - red-compartida
+    restart: on-failure
+
+networks:
+  red-compartida:
+    external: true
