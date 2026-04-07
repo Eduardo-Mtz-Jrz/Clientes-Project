@@ -1,0 +1,21 @@
+services:
+  db_mysql:
+    image: mysql:8.0
+    container_name: proyecto
+    restart: always
+    environment:
+      MYSQL_DATABASE: DEMO
+      MYSQL_ROOT_PASSWORD: 19CHied95
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - red-compartida
+
+volumes:
+  mysql_data:
+
+networks:
+  red-compartida:
+    external: true
